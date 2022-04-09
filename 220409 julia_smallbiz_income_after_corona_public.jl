@@ -1,7 +1,7 @@
 using DataFrames, CSV, Distributions, LinearAlgebra, Statistics, VegaLite
 
-# 1. 데이터 읽어들이기
-A = CSV.read("G:\\내 드라이브\\ABM\\경제코드\\5.코로나와자영업자\\220409_smallbiz_after_corona.csv", 
+# 1. 데이터 읽어들이기(csv파일 경로 재설정 필요합니다)
+A = CSV.read("220409_smallbiz_after_corona.csv", 
     DataFrame, header=true) # 가계동향조사 2019~2021년 자료를 토대로 구축한 longform 데이터프레임
 
 # 균등화 가구경상소득 변수 설정
